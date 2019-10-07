@@ -27,6 +27,7 @@ describe App do
       expect(last_response.body).to include("Goodbye Joe")
     end
   end
+
   describe 'GET /date' do
     before do
       get '/date'
@@ -47,6 +48,7 @@ describe App do
         fail "Your application is not responding to GET /date. Did you create that route?"
       end
     end
+    
   end
 end
 
